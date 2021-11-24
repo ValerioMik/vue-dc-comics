@@ -34,7 +34,7 @@ export default {
     height: 100px;
     h3{
       color: white;
-      margin-left: 125px;
+      margin-left: 40px;
     }
   }
 }

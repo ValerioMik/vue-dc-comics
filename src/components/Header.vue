@@ -4,17 +4,10 @@
          <img class="logo" alt="Vue logo" src="../assets\img\dc-logo.png">
     </div>
     <nav>
-        <ul>
-            <li><a href="#">characters</a></li>
-            <li><a href="#">comics</a></li>
-            <li><a href="#">movies</a></li>
-            <li><a href="#">tv</a></li>
-            <li><a href="#">games</a></li>
-            <li><a href="#">collectible</a></li>
-            <li><a href="#">videos</a></li>
-            <li><a href="#">fans</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">shop</a></li>
+        <ul >
+            <li v-for="link, i in navlogo" :key="i">
+                <a :href="link.url">{{link.text}}</a>
+            </li>
         </ul>
     </nav>
    
@@ -24,8 +17,55 @@
 <script>
 export default {
   name: 'HeaDer',
+  data(){
+      return{
+          navlogo:[
+              {
+                  text:"characters",
+                  url: "#"
+                  
+              },
+              {
+                  text:"comics",
+                    url: "#"
+              },
+              {
+                  text:"movies",
+                    url: "#"
+              },
+              {
+                  text:"tv",
+                    url: "#"
+              },
+              {
+                  text:"games",
+                    url: "#"
+              },
+              {
+                  text:"videos",
+                    url: "#"
+              },
+              {
+                  text:"fans",
+                    url: "#"
+              },
+              {
+                  text:"news",
+                    url: "#"
+              },
+              {
+                  text:"shop",
+                    url: "#"
+              },
+              {
+                text:"collectible",
+                  url: "#"
+              },
+          ]
+      }
+  }
   
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
