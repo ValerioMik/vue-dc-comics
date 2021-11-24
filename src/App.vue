@@ -2,29 +2,40 @@
   <div id="app">
     <HeaDer/>
    
+   <main>
+     <h3>-->conten goes heare-- </h3>
+   </main>
 
-   
+   <FooTer/>
   </div>
 </template>
 
 <script>
 import HeaDer from './components/Header.vue'
+import FooTer from './components/FooTer.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HeaDer
+    HeaDer,
+    FooTer
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ 
+  main{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 100px;
+    h3{
+      color: white;
+      margin-left: 125px;
+    }
+  }
 }
 </style>
