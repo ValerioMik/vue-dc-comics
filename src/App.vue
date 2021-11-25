@@ -1,25 +1,25 @@
 <template>
-  <div id="app">
-    <HeaDer/>
-   
-   <main>
-     <h3>-->conten goes heare-- </h3>
-   </main>
-
-   <FooTer/>
+  <div>
+    <Header/>
+    <main>
+      <Contenuti/>
+    </main>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HeaDer from './components/Header.vue'
-import FooTer from './components/FooTer.vue'
-
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+import Contenuti from '@/components/Contenuti.vue'
+// import Contenuticard from '@/components/Contenuticard.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaDer,
-    FooTer
+    Header,
+    Footer,
+    Contenuti
   }
 }
 </script>

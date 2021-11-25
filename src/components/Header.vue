@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'HeaDer',
+  name: 'Header',
   data(){
       return{
           navlogo:[
